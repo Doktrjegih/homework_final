@@ -1,4 +1,3 @@
-from dataclasses import dataclass
 
 import pytest
 from selenium import webdriver
@@ -8,23 +7,10 @@ from selenium.webdriver.opera.options import Options
 from autotests.pages.base_page import BasePage
 
 
-@dataclass
-class AuthData:
-    ip: str
-
-
-@pytest.fixture
-def auth_data(request):
-    ip = request.config.getoption('--url')
-    return AuthData(ip=ip)
-
-
 def pytest_addoption(parser):
     parser.addoption('--browser', action='store', default='chrome')
     parser.addoption('--bv', action='store')
     parser.addoption('--executor', action='store', default='local')
-    parser.addoption('--log_level', action='store', default='INFO')
-    parser.addoption('--url', action='store', default='https://www.python.org/')
     parser.addoption('--vnc', action='store_true')
     parser.addoption('--videos', action='store_true')
     parser.addoption('--mobile', action='store_true')  # only for chrome
@@ -85,6 +71,6 @@ def driver(request):
 
 
 @pytest.fixture
-def open_site(driver, auth_data) -> None:  # pylint: disable=redefined-outer-name
+def open_site(driver) -> None:  # pylint: disable=redefined-outer-name
     base = BasePage(driver)
-    base.open(auth_data.ip)
+    base.open('https://www.python.org/')
