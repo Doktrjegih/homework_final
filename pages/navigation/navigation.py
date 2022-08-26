@@ -1,7 +1,7 @@
 import allure
 
-from autotests.pages.base_page import BasePage
-from autotests.pages.navigation.navigation_locators import NavigationLocators
+from pages.base_page import BasePage
+from pages.navigation.navigation_locators import NavigationLocators
 
 
 class Navigation(BasePage):

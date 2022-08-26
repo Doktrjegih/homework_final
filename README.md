@@ -4,7 +4,7 @@
 * pip install -r requirements.txt
 
 Далее выполнить команду:
-* pytest autotests
+* pytest
 
 Также можно передать следующие аргументы:
 * --browser - chrome, firefox или opera

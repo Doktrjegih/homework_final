@@ -1,4 +1,4 @@
-SRC_DIR ?= ./autotests
+SRC_DIR ?= ./pages ./tests
 PYTHON_PATH != which python3
 PYTHON_DIR != dirname $(PYTHON_PATH)
 CONFIG_FILE ?= setup.cfg

@@ -2,8 +2,8 @@ import allure
 import pytest
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from autotests.pages.navigation.navigation import Navigation
-from autotests.pages.navigation.navigation_locators import NavigationLocators, Pages
+from pages.navigation.navigation import Navigation
+from pages.navigation.navigation_locators import NavigationLocators, Pages
 
 
 @pytest.mark.xdist_group(name='main')

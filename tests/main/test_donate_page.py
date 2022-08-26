@@ -2,7 +2,7 @@ import allure
 import pytest
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from autotests.pages.page_main.main_page import MainPage
+from pages.page_main.main_page import MainPage
 
 
 @pytest.mark.xdist_group(name='main')

@@ -1,7 +1,7 @@
 import allure
 
-from autotests.pages.base_page import BasePage
-from autotests.pages.page_downloads.downloads_page_locators import DownloadsPageLocators
+from pages.base_page import BasePage
+from pages.page_downloads.downloads_page_locators import DownloadsPageLocators
 
 
 class Downloads(BasePage):

@@ -1,10 +1,9 @@
-
 import pytest
 from selenium import webdriver
 from selenium.webdriver import ChromeOptions
 from selenium.webdriver.opera.options import Options
 
-from autotests.pages.base_page import BasePage
+from pages.base_page import BasePage
 
 
 def pytest_addoption(parser):

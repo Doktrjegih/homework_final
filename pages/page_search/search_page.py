@@ -1,7 +1,7 @@
 import allure
 
-from autotests.pages.base_page import BasePage
-from autotests.pages.page_search.search_page_locators import SearchPageLocators
+from pages.base_page import BasePage
+from pages.page_search.search_page_locators import SearchPageLocators
 
 
 class SearchPage(BasePage):
